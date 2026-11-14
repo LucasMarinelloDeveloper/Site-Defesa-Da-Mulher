@@ -133,6 +133,7 @@ button:hover {
 /* Seção disclaimer */
 
 .secao-disclaimer {
+
     background-color: #151515;
     color: #7c7f7f;
     padding: 30px 20px;
@@ -141,5 +142,23 @@ button:hover {
 }
 .secao-disclaimer .container {
     padding: 0px 0px;
-    
+    align-items: center;
+}
+
+/* Seção Direitos */
+
+.pergunta-direitos img {
+    width: 70px;
+    filter: brightness(0) invert(1); 
+}
+
+.pergunta-direitos h2 {
+    font-size: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.pergunta-direitos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
