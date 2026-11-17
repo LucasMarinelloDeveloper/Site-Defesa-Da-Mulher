@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+img{
+    max-width: 100%;
+}
 .container {
     max-width: 1300px;
     padding: 100px 0px;
@@ -11,12 +14,24 @@
     display: flex;
     gap: 50px;
 } 
+.container2{ 
+    max-width: 1300px;
+    padding: 100px 0px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.roxo {
+    color: #8302be;
+}
 
 /* Seção Hero */
 h1 {
     font-family: "DejaVu Sans Mono" , sans-serif;
     text-align: center;
-    font-size: 42px;
+    font-size: 40px;
     line-height: 25%;
 }
 h1 .Mulher-Roxo {
@@ -39,6 +54,9 @@ body {
     img{
         filter: brightness(0) invert(1);
     }
+}
+.Logo-principal {
+    gap: 10px;
 }
 .Logo-principal 
 img {
@@ -147,6 +165,15 @@ button:hover {
 
 /* Seção Direitos */
 
+.topicos {
+    background-color:#1c1c1c;
+    padding: 20px 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    box-shadow: 0 0 5px 1px #8302be;
+    align-items: center;
+}
 .pergunta-direitos img {
     width: 70px;
     filter: brightness(0) invert(1); 
@@ -160,5 +187,32 @@ button:hover {
 .pergunta-direitos {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
+    background-color: #050505;
+    box-shadow: 0 0 10px 5px #8302be;
+    border-radius: 25px;
+    padding: 35px 100px;
+
+}
+.topicos img{
+    filter: brightness(0) saturate(100%) invert(14%) sepia(93%) saturate(5683%) hue-rotate(282deg) brightness(83%) contrast(116%);
+
+    width: 75px;
+    height: auto;
+    object-fit: contain;
+    margin-right: 10px ;
+}
+.topicos h3 {
+    font-size: 22px;
+}
+.topicos p {
+    padding-left: 20px;
+    font-size: 19px;
+}
+.topico__cabecalho {
+    display: flex;
+    border-right: 5px solid #363636;
+    padding-right: 20px;
+    
 }
