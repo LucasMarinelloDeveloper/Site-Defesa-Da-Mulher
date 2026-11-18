@@ -165,15 +165,7 @@ button:hover {
 
 /* Seção Direitos */
 
-.topicos {
-    background-color:#1c1c1c;
-    padding: 20px 20px;
-    border-radius: 10px;
-    display: flex;
-    gap: 10px;
-    box-shadow: 0 0 5px 1px #8302be;
-    align-items: center;
-}
+
 .pergunta-direitos img {
     width: 70px;
     filter: brightness(0) invert(1); 
@@ -212,7 +204,40 @@ button:hover {
 }
 .topico__cabecalho {
     display: flex;
-    border-right: 5px solid #363636;
-    padding-right: 20px;
-    
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0;
+    width: 430px;
+}
+.topico {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    padding: 20px 28px;
+    background-color:#1c1c1c;
+    box-shadow: 0 0 5px 1px #8302be;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.topico1 {
+    white-space: nowrap;
+}
+
+.barra {
+  width: 5px;
+  height: 60px;
+  background-color: #494949;
+  flex-shrink: 0;
+  border-radius: 2px; 
+}
+
+.topico__conteudo{
+    margin: 0;
+}
+
+.topicos {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
 }
