@@ -1,6 +1,17 @@
 *{
-    background-color: black;
     color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+.violencias-hero{
+    background-position: 50% 50%;
+    background-size: cover;
+    min-height: 10vh;
+    background-image: url("https://cdnstatic.tencentcs.com/edgeone/pages/assets/1794580584767-1hei.png");
 }
 button {
     background-color: #3c0058;
@@ -19,13 +30,76 @@ button:hover {
     color: #000000;
     border-color: #3c0058;
 }
+.roxo {
+    color: #8302be;
+}
+
 /*violencias*/
+img {
+    filter: brightness(0) saturate(100%) invert(14%) sepia(93%) saturate(5683%) hue-rotate(282deg) brightness(83%) contrast(116%);
+    min-width: 50px;
+}
+.conteiner-coluna h1 {
+    color: #ffffff; 
+    font-weight: 900; 
+    text-shadow: 0 0 12px rgba(105, 105, 105, 0.9);
+}
 
 .conteiner-coluna {
     max-width: 1300px;
-    padding: 100px 0px;
+    min-height: 100vh;      
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
     gap: 50px;
-} 
+}
+
+.cards-violencia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    gap: 45px;
+    background-color: #050505;
+    box-shadow: 0 0 10px 5px #8302be;
+    padding: 35px 100px;
+    border-radius: 25px;
+    max-width: 900px;
+    min-height: 300px; 
+    font-size: 19px;
+    width: 90%;
+}
+.cards-violencia2 {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 30px;
+    background-color: #050505;
+    box-shadow: 0 0 10px 5px #8302be;
+    padding: 35px 90px;
+    border-radius: 25px;
+    max-width: 50%;
+    font-size: 19px;
+}
+
+.alinhamento-horizontal{
+    display: flex;
+    gap: 60px;
+}
+
+.card-violencia{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 30px;
+    background-color: #050505;
+    box-shadow: 0 0 10px 5px #8302be;
+    padding: 35px 100px;
+    border-radius: 25px;
+    font-size: 18px;
+    max-width: 100px;
+    min-height: 10px; 
+    width: 90%;  
+}

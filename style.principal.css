@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 img{
     max-width: 100%;
@@ -57,7 +60,6 @@ h1 .Mulher-Roxo {
     text-decoration: underline;
     }
 h2 {
-    
   align-self: flex-start; 
   text-align: left;       
 
