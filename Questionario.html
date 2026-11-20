@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário</title>
+</head>
+<body>
+    <h1>Questionário</h1>
+    <form action="processar_questionario.php" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" required><br><br>
+
+        <label for="genero">Gênero:</label>
+        <select id="genero" name="genero" required>
+            <option value="">Selecione</option>
+            <option value="feminino">Feminino</option>
+            <option value="masculino">Masculino</option>
+            <option value="outro">Outro</option>
+        </select><br><br>
+
+        <label for="violencia">Você já sofreu algum tipo de violência?</label><br>
+        <input type="radio" id="sim" name="violencia" value="sim" required>
+        <label for="sim">Sim</label><br>
+        <input type="radio" id="nao" name="violencia" value="nao">
+        <label for="nao">Não</label><br><br>
+
+        <input type="submit" value="Enviar">
+</body>
+</html>
