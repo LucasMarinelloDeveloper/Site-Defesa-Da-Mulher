@@ -176,7 +176,7 @@ button:hover {
     color: #7c7f7f;
     padding: 30px 20px;
     text-align: justify;
-    box-shadow: 1px 1px 5px 1px #2c2c2c;
+    box-shadow: 1px 1px 15px 1px rgba(73, 73, 73, 0.5)
 }
 .secao-disclaimer .container {
     padding: 0px 0px;
