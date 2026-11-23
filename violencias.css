@@ -33,6 +33,9 @@ button:hover {
 .roxo {
     color: #8302be;
 }
+body{
+    font-family: "DejaVu Sans Mono" , sans-serif;
+}
 
 /*violencias*/
 img {

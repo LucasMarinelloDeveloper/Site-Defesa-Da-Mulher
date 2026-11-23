@@ -25,3 +25,6 @@ button:hover {
     color: #000000;
     border-color: #3c0058;
 }
+body{
+    font-family: "DejaVu Sans Mono" , sans-serif;
+}
