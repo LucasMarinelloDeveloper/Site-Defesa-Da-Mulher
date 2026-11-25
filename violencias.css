@@ -3,15 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 img{
     max-width: 100%;
-}
-.violencias-hero{
-    background-position: 50% 50%;
-    background-size: cover;
-    min-height: 10vh;
-    background-image: url("https://cdnstatic.tencentcs.com/edgeone/pages/assets/1794580584767-1hei.png");
 }
 button {
     background-color: #3c0058;
@@ -30,14 +25,34 @@ button:hover {
     color: #000000;
     border-color: #3c0058;
 }
+
+
+
+/*seção hero*/
+
+
+
+.violencias-hero{
+    background-position: 50% 50%;
+    background-size: cover;
+    min-height: 10vh;
+    background-image: url("https://cdnstatic.tencentcs.com/edgeone/pages/assets/1794580584767-1hei.png");   
+}
+
 .roxo {
     color: #8302be;
 }
 body{
     font-family: "DejaVu Sans Mono" , sans-serif;
+    background-color: #000000;
 }
 
+
+
 /*violencias*/
+
+
+
 img {
     filter: brightness(0) saturate(100%) invert(14%) sepia(93%) saturate(5683%) hue-rotate(282deg) brightness(83%) contrast(116%);
     min-width: 50px;
@@ -67,9 +82,9 @@ img {
     gap: 45px;
     background-color: #050505;
     box-shadow: 0 0 10px 5px #8302be;
-    padding: 35px 100px;
+    padding: 35px 20px;
     border-radius: 25px;
-    max-width: 900px;
+    max-width: 1000px;
     min-height: 300px; 
     font-size: 19px;
     width: 90%;
@@ -87,22 +102,96 @@ img {
     font-size: 19px;
 }
 
-.alinhamento-horizontal{
+.alinhamento-horizontal {
     display: flex;
-    gap: 60px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
+}
+.card-violencia img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    flex-shrink: 0;                 /* Impede que o ícone seja esmagado pelo texto */
 }
 
-.card-violencia{
+.card-violencia {
+    text-decoration: none;
     display: flex;
-    align-items: center;
-    justify-content: center; 
-    gap: 30px;
+    align-items: center;            /* Centraliza verticalmente */
+    justify-content: flex-start;    /* Alinha o conteúdo a partir da esquerda */
+    gap: 20px;                      /* Distância entre o ícone e o texto */
+    
+    width: 260px;                   /* Largura exata de cada card */
+    height: 135px;                  /* Altura exata de cada card */
+    padding: 20px 25px;             /* Espaço interno equilibrado */
+    
     background-color: #050505;
-    box-shadow: 0 0 10px 5px #8302be;
-    padding: 35px 100px;
+    box-shadow: 0 0 12px 3px #8302be;
+    border: 2px solid #8302be;
     border-radius: 25px;
-    font-size: 18px;
-    max-width: 100px;
-    min-height: 10px; 
-    width: 90%;  
+}
+.card-violencia:hover {
+    background-color: #0f0f0f;
+    color: #000000;
+    border-color: #3c0058;
+    transform: translateY(-4px);
+    box-shadow: 0 0 18px 5px #a61ce8;
+}
+
+.card-violencia h3 {
+    font-size: 19px;
+    line-height: 1.3;
+    text-align: left;
+    font-weight: 700;
+}
+
+
+/*Popup*/
+
+.popup1{
+    display: none;
+    position: fixed;
+    inset: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0 0 0 / 60%);
+    backdrop-filter: blur(4px);
+}
+.popup__container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(10, 10, 10, 0.85);
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 12px 3px #8302be;
+    position: relative;
+    width: 1000px;
+}
+
+.popup__botao {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate( 40%, -40%);
+    padding: 10px;
+    aspect-ratio: 1/1;
+    width: auto;
+    height: 54px;
+}
+
+.popup__texto h3{
+    font-size: 19px;
+    line-height: 1.3;
+    text-align: left;
+}
+
+.popup--aberto1 .popup1,
+.popup--aberto2 .popup2,
+.popup--aberto3 .popup3,
+.popup--aberto4 .popup4,
+.popup--aberto5 .popup5 {
+    display: flex;
 }
