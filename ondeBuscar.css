@@ -1,5 +1,4 @@
 *{
-    background-color: black;
     color: white;
     margin: 0;
     padding: 0;
@@ -28,5 +27,115 @@ button:hover {
 }
 
 body{
+    background-color: #000000;
     font-family: "DejaVu Sans Mono" , sans-serif;
+}
+
+
+.container {
+    align-items: center;
+    max-width: 1700px;
+    min-height: 300px;
+    padding: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+} 
+
+.card-titulo{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+}
+.buscar {
+    min-height: 10vh;
+    background-image: url("https://cdnstatic.tencentcs.com/edgeone/pages/assets/1794580584767-1hei.png");
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.card-titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 0 10px 5px #8302be;
+    padding: 35px 100px;
+    border-radius: 25px;
+    max-width: 50%;
+    font-size: 19px;
+}  
+
+.card-principal{
+    display: flex;
+    padding: 35px 20px;
+    border-radius: 25px;
+    max-width: 70%;
+    font-size: 19px;
+}  
+
+.rede-apoio {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #000000;
+  box-shadow: 0 0 10px 5px #8302be;
+  border-radius: 15px;
+  border: 1px solid #3c0058;
+}
+.rede-apoio h2 {
+  color: #b143ff;
+  font-size: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.lista-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btn-apoio {
+  display: flex;
+  flex-direction: column;
+  padding: 14px 18px;
+  background-color: #ffffff;
+  border: 1px solid #d5bce8;
+  border-left: 5px solid #6b21a8;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+.btn-apoio strong {
+  color: #3b0764;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+.btn-apoio span {
+  color: #555555;
+  font-size: 0.875rem;
+}
+.btn-apoio:hover {
+  transform: translateY(-2px);
+  background-color: #f3e8ff;
+  box-shadow: 0 4px 12px rgba(107, 33, 168, 0.12);
+}
+.btn-apoio.destaque {
+  background-color: #6b21a8;
+  border-color: #6b21a8;
+}
+.btn-apoio.destaque strong {
+  color: #ffffff;
+}
+.btn-apoio.destaque span {
+  color: #f3e8ff;
+}
+.btn-apoio.destaque:hover {
+  background-color: #581c87;
 }
