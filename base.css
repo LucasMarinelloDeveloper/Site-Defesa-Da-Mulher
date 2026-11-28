@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.roxo {
+    color: #8302be;
+}
+html, body{
+    font-family: "DejaVu Sans Mono", "Segoe UI", system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+}
+
+img{
+    max-width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a; 
+}
+::-webkit-scrollbar-thumb {
+  background: #5b189a; 
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8302be; 
+}
+
+:root{
+  --preto: #000000;
+    --card: #050505;
+    --superficie: #141414;
+    --superficie-2: #1c1c1c;
+    --roxo: #8302be;
+    --roxo-escuro: #3c0058;
+    --roxo-borda: #61018d;
+    --roxo-hover: #7a05b3;
+    --roxo-claro: #c58af2;     
+    --texto: #ffffff;
+    --texto-suave: #d6d6dc;
+    --texto-mudo: #a9a9b3;
+    --brilho: 0 0 18px 2px rgba(131, 2, 190, 0.65);
+    --brilho-forte: 0 0 26px 5px rgba(131, 2, 190, 0.85);
+    --raio: 25px;
+    --fonte: "DejaVu Sans Mono", "Segoe UI", system-ui, -apple-system, sans-serif;
+    --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
